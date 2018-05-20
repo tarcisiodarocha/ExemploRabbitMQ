@@ -14,16 +14,22 @@ public class Receptor {
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
-    channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+                      //(queue-name, durable, exclusive, auto-delete, params); 
+    channel.queueDeclare(QUEUE_NAME, false,   false,     false,       null);
+    
     System.out.println(" [*] Esperando recebimento de mensagens...");
 
     Consumer consumer = new DefaultConsumer(channel) {
-      public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
-          throws IOException {
+      public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)           throws IOException {
+
         String message = new String(body, "UTF-8");
         System.out.println(" [x] Mensagem recebida: '" + message + "'");
+
+                        //(deliveryTag,               multiple);
+        //channel.basicAck(envelope.getDeliveryTag(), false);
       }
     };
-    channel.basicConsume(QUEUE_NAME, true, consumer);
+                      //(queue-name, autoAck, consumer);    
+    channel.basicConsume(QUEUE_NAME, true,    consumer);
   }
 }
