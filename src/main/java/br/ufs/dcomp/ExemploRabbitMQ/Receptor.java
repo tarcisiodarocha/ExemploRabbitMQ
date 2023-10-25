@@ -13,7 +13,7 @@ public class Receptor {
     factory.setHost("ip-da-instancia-da-aws"); // Alterar
     factory.setUsername("usuário-do-rabbitmq-server"); // Alterar
     factory.setPassword("senha-do-rabbitmq-server"); // Alterar
-    factory.setVirtualHost("/");    Connection connection = factory.newConnection();
+    factory.setVirtualHost("/");   
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
