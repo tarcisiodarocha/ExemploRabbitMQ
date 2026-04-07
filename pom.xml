@@ -13,9 +13,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>
-                br.ufs.dcomp.ExemploRabbitMQ.Emissor
-              </mainClass>
+              <mainClass>br.ufs.dcomp.ExemploRabbitMQ.Criador</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

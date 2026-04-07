@@ -1,3 +1,12 @@
-br/ufs/dcomp/ExemploRabbitMQ/Emissor.class
-br/ufs/dcomp/ExemploRabbitMQ/Receptor.class
-br/ufs/dcomp/ExemploRabbitMQ/Receptor$1.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ3$1.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ2.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ1.class
+br/ufs/dcomp/ExemploRabbitMQ/EmissorChefia.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ5.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ2$1.class
+br/ufs/dcomp/ExemploRabbitMQ/Criador.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ5$1.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ3.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ1$1.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ4$1.class
+br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ4.class
