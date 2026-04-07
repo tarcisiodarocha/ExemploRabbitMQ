@@ -1,2 +1,4 @@
-/home/ubuntu/environment/ExemploRabbitMQ/src/main/java/br/ufs/dcomp/ExemploRabbitMQ/Receptor.java
-/home/ubuntu/environment/ExemploRabbitMQ/src/main/java/br/ufs/dcomp/ExemploRabbitMQ/Emissor.java
+/home/ubuntu/environment/ExemploRabbitMQ/src/main/java/br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ2.java
+/home/ubuntu/environment/ExemploRabbitMQ/src/main/java/br/ufs/dcomp/ExemploRabbitMQ/Criador.java
+/home/ubuntu/environment/ExemploRabbitMQ/src/main/java/br/ufs/dcomp/ExemploRabbitMQ/EmissorChefia.java
+/home/ubuntu/environment/ExemploRabbitMQ/src/main/java/br/ufs/dcomp/ExemploRabbitMQ/ReceptorQ1.java

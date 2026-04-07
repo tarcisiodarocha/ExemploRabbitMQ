@@ -4,22 +4,18 @@ import com.rabbitmq.client.*;
 
 import java.io.IOException;
 
-public class Receptor {
-
-  private final static String QUEUE_NAME = "minha-fila";
+public class ReceptorQ1 {
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("ip-da-instancia-da-aws"); // Alterar
-    factory.setUsername("usuário-do-rabbitmq-server"); // Alterar
-    factory.setPassword("senha-do-rabbitmq-server"); // Alterar
+    factory.setHost("3.81.27.206"); // Alterar
+    factory.setUsername("admin"); // Alterar
+    factory.setPassword("password"); // Alterar
     factory.setVirtualHost("/");   
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
                       //(queue-name, durable, exclusive, auto-delete, params); 
-    channel.queueDeclare(QUEUE_NAME, false,   false,     false,       null);
-    
     System.out.println(" [*] Esperando recebimento de mensagens...");
 
     Consumer consumer = new DefaultConsumer(channel) {
@@ -33,6 +29,6 @@ public class Receptor {
       }
     };
                       //(queue-name, autoAck, consumer);    
-    channel.basicConsume(QUEUE_NAME, true,    consumer);
+    channel.basicConsume("Q1", true,    consumer);
   }
 }
