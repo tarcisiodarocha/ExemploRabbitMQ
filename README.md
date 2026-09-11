@@ -8,14 +8,7 @@ Exemplo introdutório de um produtor (`Emissor`) e um consumidor (`Receptor`) us
 - Maven 3.8 ou superior
 - RabbitMQ em execução, localmente ou em um servidor acessível
 
-O exemplo carrega exclusivamente o arquivo local `config/rabbitmq.properties`.
-Copie o arquivo de exemplo para criá-lo:
-
-```bash
-cp config/rabbitmq.properties.example config/rabbitmq.properties
-```
-
-Edite `config/rabbitmq.properties` com os dados do servidor. Esse arquivo é obrigatório e é ignorado pelo Git para que credenciais não sejam enviadas ao repositório.
+O exemplo carrega exclusivamente o arquivo local `config/rabbitmq.properties`. Edite `config/rabbitmq.properties` com os dados do servidor. Esse arquivo é obrigatório e é ignorado pelo Git para que credenciais não sejam enviadas ao repositório.
 
 ## Compilar
 
